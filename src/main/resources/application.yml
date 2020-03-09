@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: cardc
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+#  profiles:
+#    active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://139.224.187.229:3306/anxiaobei?characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: a3[*(!])9p
+server:
+  port: 12113
+mybatis:
+  type-aliases-package: cn.com.eflytech.stucard.bean
+  configuration:
+    map-underscore-to-camel-case: true
